@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - HealthCare Hospital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .about-section {
+            padding: 4rem 0;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        .stats-card {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .stats-number {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .mission-vision {
+            background: var(--light-gray);
+            padding: 4rem 0;
+        }
+        .mission-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .mission-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .mission-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 2rem;
+        }
+        .timeline-item {
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .timeline-year {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">HealthCare Hospital</div>
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="facilities.html">Facilities</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="news.html">News</a>
+                <a href="appointment.html">Book Appointment</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section" style="margin-top: 70px;">
+        <div class="container">
+            <h1 style="text-align: center; margin-bottom: 2rem;">About HealthCare Hospital</h1>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+                For over two decades, HealthCare Hospital has been at the forefront of medical excellence, 
+                providing world-class healthcare services with compassion and dedication. Our state-of-the-art 
+                facilities, combined with our expert medical professionals, ensure that every patient receives 
+                the highest standard of care.
+            </p>
+
+            <div class="about-grid">
+                <div class="stats-card">
+                    <div class="stats-number">20+</div>
+                    <h3>Years of Excellence</h3>
+                    <p>Serving the community with dedication</p>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-number">100+</div>
+                    <h3>Expert Doctors</h3>
+                    <p>Specialized in various fields</p>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-number">50,000+</div>
+                    <h3>Patients Served</h3>
+                    <p>Annually with care and compassion</p>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-number">500+</div>
+                    <h3>Beds</h3>
+                    <p>Modern and well-equipped facilities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mission-vision">
+        <div class="container">
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h2>Our Mission</h2>
+                    <p>To provide exceptional healthcare services that improve the quality of life for our patients, 
+                       supported by cutting-edge technology and delivered with compassion and expertise.</p>
+                </div>
+                <div class="mission-card">
+                    <i class="fas fa-eye"></i>
+                    <h2>Our Vision</h2>
+                    <p>To be the leading healthcare institution, recognized globally for excellence in patient care, 
+                       medical education, and innovative research.</p>
+                </div>
+                <div class="mission-card">
+                    <i class="fas fa-heart"></i>
+                    <h2>Our Values</h2>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>✓ Excellence in Healthcare</li>
+                        <li>✓ Patient-Centered Care</li>
+                        <li>✓ Integrity & Ethics</li>
+                        <li>✓ Innovation & Research</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Our Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2000</div>
+                    <h3>Foundation</h3>
+                    <p>HealthCare Hospital was established with a vision to provide quality healthcare services.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2005</div>
+                    <h3>Expansion</h3>
+                    <p>Added new departments and increased bed capacity to serve more patients.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2010</div>
+                    <h3>Technology Integration</h3>
+                    <p>Implemented state-of-the-art medical equipment and digital health records.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2015</div>
+                    <h3>Research Center</h3>
+                    <p>Established a dedicated research center for medical advancement.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2020</div>
+                    <h3>Global Recognition</h3>
+                    <p>Received international accreditation and excellence awards in healthcare.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>HealthCare Hospital</h3>
+                    <p>Excellence in healthcare, committed to your well-being.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <p><a href="services.html" style="color: white; text-decoration: none;">Services</a></p>
+                    <p><a href="doctors.html" style="color: white; text-decoration: none;">Doctors</a></p>
+                    <p><a href="appointment.html" style="color: white; text-decoration: none;">Appointments</a></p>
+                </div>
+                <div>
+                    <h3>Contact Us</h3>
+                    <p>123 Healthcare Avenue</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: info@healthcarehospital.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

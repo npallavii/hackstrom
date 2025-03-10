@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Hospital Navigation System</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Header Styling */
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Main Container Styling */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Room Selection Dropdown Styling */
+        .room-selection {
+            margin-bottom: 30px;
+        }
+
+        .room-selection label {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .room-selection select {
+            width: 80%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        .room-selection select:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        .room-selection button {
+            width: 80%;
+            padding: 12px;
+            margin-top: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .room-selection button:hover {
+            background-color: #218838;
+        }
+
+        /* Navigation Buttons Styling */
+        .navigation-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navigation-buttons button {
+            width: 80%;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navigation-buttons button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer Styling */
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Smart Hospital Navigation System</h1>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Room Selection Dropdown -->
+        <div class="room-selection">
+            <label for="room-numbers">Select Room Number:</label>
+            <select id="room-numbers" name="room-numbers" required aria-label="Room Numbers">
+                <option value="">-- Select a Room --</option>
+                <option value="101">Room 101 - General Ward</option>
+                <option value="102">Room 102 - ICU</option>
+                <option value="103">Room 103 - Pediatrics</option>
+                <option value="104">Room 104 - Cardiology</option>
+                <option value="105">Room 105 - Orthopedics</option>
+                <option value="201">Room 201 - Emergency Room</option>
+                <option value="202">Room 202 - Radiology</option>
+                <option value="203">Room 203 - Neurology</option>
+                <option value="204">Room 204 - Oncology</option>
+                <option value="205">Room 205 - Maternity Ward</option>
+                <option value="301">Room 301 - Surgery Room</option>
+                <option value="302">Room 302 - Pharmacy</option>
+                <option value="303">Room 303 - Laboratory</option>
+            </select>
+            <form id="room-form" action="3d.html" onsubmit="return handleRoomSelection()">
+                <center>
+                    <button type="submit" style="color: rgb(13, 13, 176);">Go to the Room</button>
+                </center>
+            </form>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons">
+            <button>Emergency Care</button>
+            <button>Consultation Rooms</button>
+            <button>Medical Departments</button>
+            <button>Audio Assistance</button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2025 Smart Hospital Navigation System. All rights reserved.</p>
+    </div>
+
+    <script>
+        // Function to handle room selection
+        function handleRoomSelection() {
+            const roomDropdown = document.getElementById("room-numbers");
+            const selectedRoom = roomDropdown.value;
+
+            if (!selectedRoom) {
+                alert("Please select a room number.");
+                return false; // Prevent form submission
+            }
+
+            alert(`Navigating to 3D View for Room ${selectedRoom}...`);
+            return true; // Allow form submission
+        }
+    </script>
+</body>
+</html>

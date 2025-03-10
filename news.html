@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Updates - HealthCare Hospital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .news-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .news-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .news-content {
+            padding: 1.5rem;
+        }
+        .news-date {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        .news-category {
+            display: inline-block;
+            padding: 0.3rem 1rem;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+        .news-title {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+        .read-more {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        .read-more:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">HealthCare Hospital</div>
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="facilities.html">Facilities</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="news.html">News</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section" style="margin-top: 70px;">
+        <div class="container">
+            <h1 style="text-align: center; margin-bottom: 3rem;">Latest News & Updates</h1>
+            
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="images/New Advanced MRI Machine Installation.jpg" alt="New Medical Equipment" class="news-image">
+                    <div class="news-content">
+                        <div class="news-date">March 10, 2025</div>
+                        <span class="news-category">Technology</span>
+                        <h3 class="news-title">New Advanced MRI Machine Installation</h3>
+                        <p>We're excited to announce the installation of our new state-of-the-art MRI machine, 
+                           enhancing our diagnostic capabilities and reducing scan times for patients.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/International Medical Conference 2025.jpg" alt="Medical Conference" class="news-image">
+                    <div class="news-content">
+                        <div class="news-date">March 8, 2025</div>
+                        <span class="news-category">Events</span>
+                        <h3 class="news-title">International Medical Conference 2025</h3>
+                        <p>Our hospital is hosting the International Medical Conference 2025, bringing together 
+                           leading healthcare professionals from around the world.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/Maintaining Heart Health.jpg" alt="Health Tips" class="news-image">
+                    <div class="news-content">
+                        <div class="news-date">March 5, 2025</div>
+                        <span class="news-category">Health Tips</span>
+                        <h3 class="news-title">Maintaining Heart Health: Expert Tips</h3>
+                        <p>Our cardiology team shares essential tips for maintaining heart health and preventing 
+                           cardiovascular diseases through lifestyle changes.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/Free Vaccination Drive for Children.jpg" alt="Vaccination Drive" class="news-image">
+                    <div class="news-content">
+                        <div class="news-date">March 3, 2025</div>
+                        <span class="news-category">Community</span>
+                        <h3 class="news-title">Free Vaccination Drive for Children</h3>
+                        <p>Join our upcoming free vaccination drive for children under 5 years. Protect your 
+                           children from preventable diseases.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/Launch of Telemedicine Service.jpg"Digital Health" class="news-image">
+                    <div class="news-content">
+                        <div class="news-date">March 1, 2025</div>
+                        <span class="news-category">Innovation</span>
+                        <h3 class="news-title">Launch of Telemedicine Services</h3>
+                        <p>We're introducing new telemedicine services to provide convenient healthcare access 
+                           to our patients from the comfort of their homes.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/Welcoming New Specialists.jpg.crdownload" alt="New Doctors" class="news-image">
+                    <div class="news-content">
+                        <div class="news-date">February 28, 2025</div>
+                        <span class="news-category">Staff Updates</span>
+                        <h3 class="news-title">Welcoming New Specialists</h3>
+                        <p>Meet our newest team members - highly qualified specialists joining our 
+                           neurology and cardiology departments.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>HealthCare Hospital</h3>
+                    <p>Excellence in healthcare, committed to your well-being.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <p><a href="services.html" style="color: white; text-decoration: none;">Services</a></p>
+                    <p><a href="doctors.html" style="color: white; text-decoration: none;">Doctors</a></p>
+                    <p><a href="appointment.html" style="color: white; text-decoration: none;">Appointments</a></p>
+                </div>
+                <div>
+                    <h3>Contact Us</h3>
+                    <p>123 Healthcare Avenue</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: info@healthcarehospital.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

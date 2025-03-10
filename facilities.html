@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Facilities - HealthCare Hospital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .facility-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .facility-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .facility-content {
+            padding: 2rem;
+        }
+        .facility-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .feature-item i {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">HealthCare Hospital</div>
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="facilities.html">Facilities</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section" style="margin-top: 70px;">
+        <div class="container">
+            <h1 style="text-align: center; margin-bottom: 3rem;">World-Class Facilities</h1>
+
+            <div class="facility-card">
+                <img src="images/Facilities.jpg" alt="Facilities" class="facility-image">
+                <div class="facility-content">
+                    <h2>Next-Gen Healthcare Facilities</h2>
+                    <p>Our advanced operation theaters are equipped with the latest medical technology to ensure precise and safe surgical procedures.</p>
+                    <div class="facility-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Robotic Surgery Systems</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Advanced Imaging Equipment</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Sterile Environment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <img src="images/ICU.JPG" alt="ICU" class="facility-image">
+                <div class="facility-content">
+                    <h2>Intensive Care Units (ICU)</h2>
+                    <p>Our ICUs provide 24/7 monitoring and care for critically ill patients with advanced life support systems.</p>
+                    <div class="facility-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Advanced Monitoring Systems</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Specialized ICU Staff</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Individual Patient Rooms</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <img src="images/DIA.JPG" alt="Diagnostic Center" class="facility-image">
+                <div class="facility-content">
+                    <h2>Advanced Diagnostic Center</h2>
+                    <p>Our diagnostic center features cutting-edge imaging and laboratory equipment for accurate diagnosis.</p>
+                    <div class="facility-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>MRI & CT Scan</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Digital X-Ray</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Modern Laboratory</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <img src="images/Comfortable Patient Rooms.JPG" alt="Patient Rooms" class="facility-image">
+                <div class="facility-content">
+                    <h2>Comfortable Patient Rooms</h2>
+                    <p>Our patient rooms are designed to provide maximum comfort and care during your stay.</p>
+                    <div class="facility-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Private Rooms</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24/7 Nursing Care</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Modern Amenities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <img src="images/Rehabilitation-Centers.jpg" alt="Rehabilitation Center" class="facility-image">
+                <div class="facility-content">
+                    <h2>Rehabilitation Center</h2>
+                    <p>Our rehabilitation center helps patients recover and regain their independence through specialized therapy programs.</p>
+                    <div class="facility-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Physical Therapy</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Occupational Therapy</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Modern Equipment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>HealthCare Hospital</h3>
+                    <p>Excellence in healthcare, committed to your well-being.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <p><a href="services.html" style="color: white; text-decoration: none;">Services</a></p>
+                    <p><a href="doctors.html" style="color: white; text-decoration: none;">Doctors</a></p>
+                    <p><a href="appointment.html" style="color: white; text-decoration: none;">Appointments</a></p>
+                </div>
+                <div>
+                    <h3>Contact Us</h3>
+                    <p>123 Healthcare Avenue</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: info@healthcarehospital.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
